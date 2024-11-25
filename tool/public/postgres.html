@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Назначение прав</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+<body>
+	<div class="menubar">
+		<ul>
+			<li><a href="main.html"><img src="img/main.png" width="80" 
+				height="80" alt="Главная" title="Главная"></a></li>
+			<li><a href="postgres.html"><img src="img/postgres.png" width="80" 
+				height="80" alt="Назначение прав в Postgres" title="Назначение прав в Postgres"></a></li>
+		</ul>
+	</div>
+	<div class="head">
+		<p>Назначение прав в Postgres</p>
+	</div>
+	<div class="workspace">
+        <p>
+            <label for="stand">Выберите стенд</label>
+            <select name="stand" id="stand"></select>
+        </p>
+        <p>Создание пользователя</p>
+        <p>
+            <label for="name">Введите логин пользователя</label>
+            <input type="text" name="log" id="login">
+        </p>
+        <p>
+            <label for="name">Введите пароль пользователя</label>
+            <input type="text" name="pass" id="password">
+        </p>
+        <p>
+            <input type="submit" value="Создать" id="Создать">
+        </p>
+        <p>Назначение прав</p>
+        <p>
+            <label for="user">Выберите пользователя</label>
+            <select name="user" id="user"></select>
+        </p>
+        <p>
+            <label for="db">Выберите БД</label>
+            <select name="db" id="db"></select>
+            <label for="">или выдать права для всех БД на стенде?</label>
+            <input type="checkbox" name="db" value="1" id="cb1">
+        </p>
+        <p>
+            <label>Выбрано: </label>
+			<label id="picked1"></label>
+        </p>
+        <p>
+            <input type="submit" id="add1" value="Добавить">
+        </p>
+        <p>
+            <label for="role">Выберите таблицы</label>
+            <select name="table" id="table"></select>
+            <label for="">или выдать права для всех таблиц в БД?</label>
+            <input type="checkbox" name="table" value="2" id="cb2">
+        </p>
+        <p>
+            <label>Выбрано: </label>
+			<label id="picked2"></label>
+        </p>
+        <p>
+            <input type="submit" id="add2" value="Добавить">
+        </p>
+        <p>
+            <label for="role">Выберите права</label>
+            <select name="role" id="role"></select>
+            <label for="">или выдать все права?</label>
+            <input type="checkbox" name="role" value="3" id="cb3">
+        </p>
+        <p>
+            <label>Выбрано: </label>
+			<label id="picked3"></label>
+        </p>
+        <p>
+            <input type="submit" id="add3" value="Добавить">
+        </p>
+        <p>
+            <input type="submit" id="Очистить" value="Очистить">
+        </p>
+        <p>
+            <input type="submit" value="Выдать" id="Выдать">
+            <input type="submit" value="Отозвать" id="Отозвать">
+            <input type="submit" value="Удалить" id="Удалить">
+        </p>
+	</div>
+    <script type="text/javascript" src="scripts/postgres.js"></script>
+</body>
+</html>

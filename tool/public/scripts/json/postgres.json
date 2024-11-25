@@ -1,0 +1,13 @@
+{
+    "login": "",
+    "password": "",
+    "allDbChecked": false,
+    "allTableChecked": false,
+    "allRoleChecked": false,
+    "stand": ["RNIS 1", "RNIS 2", "RNIS 3"],
+    "user": [],
+    "db": [],
+    "table": [],
+    "role": ["SELECT", "INSERT", "UPDATE", "DELETE"],
+    "requestType": ""
+}

@@ -1,0 +1,89 @@
+.menubar {
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	height: 100%;
+	position: fixed;
+    top: 0;
+    left: 0;
+	background-color: #7C80FF;
+}
+.head {
+	padding: 0;
+	margin-left: 100px;
+	width: 95%;
+	height: 100px;
+	position: fixed;
+    top: 0;
+	background-color: gray;
+}
+.workspace {
+	padding: 0;
+	margin-left: 100px;
+	margin-top: 130px;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+.menubar a {
+	color: black;
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+.menubar li:last-of-type a {
+	border-right: none;	
+}
+li {
+	list-style-type: none;
+	margin: 10px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.head P{
+	margin-top: 25px;
+	margin-left: 15px;
+	font-size: 2em;
+	color: white;
+}
+.workspace P{
+	margin-top: 30px;
+	margin-left: 30px;
+	font-size: 15px;
+}
+.workspace input[type="submit"]{
+	padding: 10px 20px;
+	font-size: 15px;
+	background: gray;
+	cursor: pointer;
+	border-radius: 5px;
+	color: white;
+}
+.workspace input[type="text"]{
+	border-radius:5px;
+	border: none;
+	background:gainsboro;
+	color: #7C80FF;
+	padding: 5px;
+	width: 300px;
+}
+.workspace input[type="text"]:focus{
+	background: gray;
+	color:#000;
+}
+input[name~="log"] {
+	margin-left: 8px;
+}
+label[for~="login"] {
+	margin-left: 8px;
+}
